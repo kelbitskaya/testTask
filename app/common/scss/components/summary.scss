@@ -1,0 +1,26 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid $color-border;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:first-child {
+    border-left: none;
+  }
+
+  &__number {
+    color: $color-purple;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 32px;
+    padding: 18px 24px 24px;
+  }
+
+  &__view__link {
+    color: $color-blue;
+  }
+}
+

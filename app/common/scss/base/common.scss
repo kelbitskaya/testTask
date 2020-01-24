@@ -1,0 +1,120 @@
+
+.collapse__button {
+  &-open {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button__main {
+  color: $color-white;
+  background: $color-purple;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.page {
+  min-width: 320px;
+
+  .hide {
+    display: none;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+  &__color-placehorder {
+    color: $color-placehorder;
+  }
+
+  &__color-blue {
+    color: $color-blue;
+  }
+
+  &__link {
+    color: $color-blue;
+  }
+
+  &__section {
+    width: 100%;
+    max-width: 924px;
+    padding: 18px 24px 24px;
+    background: $color-white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+
+    &-without-bg {
+      background: none;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    &__title {
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+
+      &-underline {
+        border-bottom: 1px solid $color-border;
+      }
+    }
+
+    &-with-border {
+      border-top: 4px solid $color-green;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: -14px;
+    margin-left: -14px;
+
+    &__no-gutter {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  &__col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 14px;
+    padding-left: 14px;
+
+    &__no-gutter {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &-two {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 14px;
+      padding-left: 14px;
+    }
+
+    &-three {
+      flex: 0 0 33%;
+      max-width: 33%;
+      padding-right: 14px;
+      padding-left: 14px;
+    }
+
+    &-four {
+      flex: 0 0 25%;
+      max-width: 25%;
+      padding-right: 14px;
+      padding-left: 14px;
+    }
+  }
+
+}

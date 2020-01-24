@@ -1,0 +1,73 @@
+.metabar {
+  background: $color-light-grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $color-white;
+  height: 48px;
+
+  .button {
+    color: $color-white;
+  }
+
+  .menu__button {
+    border-right: 1px solid $color-extra-light-grey;
+
+    &-open {
+      transform: scale(-1, 1)
+    }
+  }
+
+  .bell__button {
+    border-left: 1px solid $color-extra-light-grey;
+  }
+
+  .menu__button {
+    margin-right: 8px;
+  }
+
+  .menu__button,
+  .bell__button {
+    @include centered-icon();
+  }
+
+  .sign__button {
+    padding: 0;
+    background: $color-dark-grey;
+    @include centered-icon(auto);
+  }
+
+  .account__button {
+    @include centered-icon(auto);
+    padding: 8px;
+  }
+
+  .account__icon {
+    &-svg {
+      width: 98px;
+      height: 16px;
+    }
+  }
+
+  .sign__title {
+    margin-left: 8px;
+    color: $color-white;
+  }
+
+  .account__title {
+    padding-right: 5px ;
+    &-bold {
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    flex: 1 0 auto;
+  }
+
+  &__icon-svg {
+    width: 93px;
+    height: 48px;
+  }
+
+}

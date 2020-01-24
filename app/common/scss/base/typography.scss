@@ -1,0 +1,35 @@
+.page {
+  &__title,
+  &__description {
+    color: $color-text-grey;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 24px;
+
+    &-standalone {
+      align-self: baseline;
+      margin-top: 14px;
+    }
+
+    &-small {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    &-nano {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}

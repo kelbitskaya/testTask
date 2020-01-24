@@ -1,0 +1,146 @@
+.results {
+  &__table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    justify-content: space-around;
+    flex: 1 1 auto;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      &__title {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__details {
+    border-top: 1px solid $color-border;
+    padding-top: 14px;
+    font-size: 14px;
+    line-height: 16px;
+
+    .info {
+      margin-top: 15px;
+      margin-bottom: 11px;
+      background: $color-info-bg;
+      border: 1px solid $color-border;
+
+      &__header {
+        padding: 12px 23px;
+        border-bottom: 1px solid $color-border;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__collapse {
+          margin-left: 20px;
+        }
+
+        &__list {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+          justify-content: space-around;
+          flex: 1 1 auto;
+
+          &__item {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            &__title {
+              font-weight: 700;
+            }
+          }
+        }
+
+        &__status {
+          flex-grow: 0.2;
+
+          &__label {
+            background: $color-reject;
+            color: $color-white;
+            padding: 5px 10px;
+            border-radius: 2px;
+          }
+        }
+      }
+
+      &__document {
+        padding: 12px 23px;
+        align-items: baseline;
+        margin-bottom: 0;
+
+        &__description {
+          font-size: 14px;
+          line-height: 16px;
+
+          &-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+
+          &-text {
+            margin-bottom: 10px;
+          }
+
+          &-icon {
+            width: 13px;
+          }
+
+          &__text-small {
+            font-size: 12px;
+            line-height: 16px;
+            margin-left: 5px;
+          }
+
+          &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+
+            &-text {
+              color: $color-placehorder;
+            }
+          }
+
+          &__doc {
+            &-text {
+              color: $color-blue;
+            }
+          }
+        }
+
+        &__edit__button {
+          color: $color-blue;
+
+          &:hover {
+            cursor: pointer;
+          }
+          &__text {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    &__button {
+      color: $color-blue;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

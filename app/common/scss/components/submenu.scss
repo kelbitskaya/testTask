@@ -1,0 +1,59 @@
+.submenu {
+  background: $color-light-grey;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-white;
+
+  .tel {
+    &__title {
+      display: block;
+      padding: 5px 0;
+    }
+
+    &__link {
+      padding: 25px 15px;
+    }
+
+    &__phone {
+      display: block;
+      padding: 5px 0;
+      border-top: 1px solid;
+    }
+
+    &__title,
+    &__paceholder,
+    &__code,
+    &__number {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+
+    &-inline {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__email {
+    background: $color-dark-grey;
+    position: relative;
+    @include triangle($color-dark-grey)
+  }
+
+  &__chat {
+    position: relative;
+    background: $color-grey;
+    @include triangle($color-grey);
+
+    &__button {
+      padding: 2px 5px;
+      background: $color-green;
+      border-radius: 3px;
+      margin-left: 15px;
+    }
+  }
+}

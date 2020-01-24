@@ -1,0 +1,23 @@
+@mixin centered-item {
+  display: flex;
+  align-items: center;
+}
+
+@mixin triangle($color, $class: 'triangle') {
+  .#{$class}::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    top: -10px;
+    left: calc(50% - 5px);
+    border: 5px solid transparent;
+    border-bottom: 5px solid $color;
+  }
+
+}
+
+@mixin centered-icon($width: 48px, $height: 48px) {
+  @include centered-item();
+  justify-content: center;
+  width: #{$width};
+  height: #{$height};
+}

@@ -1,0 +1,32 @@
+.form {
+  marrgin-top:10px;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    padding-right: 14px;
+    padding-left: 14px;
+
+    &__title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__input {
+      padding: 10px 0;
+      border: 0;
+      border-bottom: 2px solid $color-border;
+      font-size: 14px;
+      line-height: 16px;
+
+      &::placeholder {
+        color: $color-placehorder;
+      }
+
+      &-date {
+        padding: 8px 0 7px;
+      }
+    }
+  }
+}
