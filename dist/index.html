@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://marksheet.io/css/reset.css">
+<link href="main.css" rel="stylesheet"></head>
+
+<body class="page">
+  <!-- Header -->
+  <header class="page__header header hide">
+    <button class="button menu__button header__menu__button">
+      <span class="header__icon">
+        <svg class="header__svg">
+          <use xlink:href="#menu-collapse"></use>
+        </svg>
+      </span>
+    </button>
+    <!-- LOGO -->
+    <a href="/" class="header__logo" title="CDPHP">
+      <svg class="page__logo">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </a>
+    <!-- //LOGO// -->
+
+    <!-- Navigation -->
+    <nav class="page__menu">
+      <ul class="page__nav nav">
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+             <svg class="header__svg">
+               <use xlink:href="#home"></use>
+             </svg>
+            </span>
+            <span class="nav__title">Home</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+              <svg class="header__svg">
+               <use xlink:href="#patients"></use>
+             </svg>
+            </span>
+            <span class="nav__title">Patients</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+              <svg class="header__svg">
+                <use xlink:href="#claims"></use>
+              </svg>
+            </span>
+            <span class="nav__title">Claims</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+             <svg class="header__svg">
+               <use xlink:href="#author"></use>
+             </svg>
+            </span>
+            <span class="nav__title">Authorizations</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+              <svg class="header__svg">
+               <use xlink:href="#folder"></use>
+              </svg>
+            </span>
+            <span class="nav__title">HEDIS Gaps</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+              <svg class="header__svg">
+               <use xlink:href="#resources"></use>
+              </svg>
+            </span>
+            <span class="nav__title">Resources</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/" class="nav__link">
+            <span class="header__icon header__icon-with-bg">
+              <svg class="header__svg">
+               <use xlink:href="#reports"></use>
+              </svg>
+            </span>
+            <span class="nav__title">Reports</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav__search search">
+        <a href="/" class="search__link">
+          <span class="search__link__title">Provider Search</span>
+          <span class="search__link__icon">
+           <svg  class="search__link__icon__svg">
+              <use xlink:href="#external-link"></use>
+           </svg>
+        </span>
+        </a>
+      </div>
+    </nav>
+    <!-- // Navigation//  -->
+
+    <!--  SubMenu  -->
+    <div class="page__submenu submenu">
+      <ul class="submenu__list">
+        <li class="submenu__tel tel">
+          <a href="tel:518643500" class="submenu__link tel__link">
+            <span class="tel__title">Need help?</span>
+            <span class="tel__phone">
+              <span class="tel__placeholder">Dial</span>
+              <span class="tel__bracket">(</span>
+              <span class="tel__code">518</span>
+              <span class="tel__bracket">)</span>
+              <span class="tel__number">641-3500</span>
+            </span>
+          </a>
+        </li>
+        <li class="submenu__email email">
+          <a href="/" class="submenu__link triangle submenu__link-inline">
+            <span class="header__icon">
+              <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M467 61H45C20.218 61 0 81.196 0 106v300c0 24.72 20.128 45 45 45h422c24.72 0 45-20.128 45-45V106c0-24.72-20.128-45-45-45zm-6.214 30L256.954 294.833 51.359 91h409.427zM30 399.788V112.069l144.479 143.24L30 399.788zM51.213 421l144.57-144.57 50.657 50.222c5.864 5.814 15.327 5.795 21.167-.046L317 277.213 460.787 421H51.213zM482 399.787L338.213 256 482 112.212v287.575z"/>
+              </svg>
+            </span>
+            <span>Email Us</span>
+          </a>
+        </li>
+        <li class="submenu__chat">
+          <a href="/" class="submenu__link triangle submenu__link-inline">
+            <span class="header__icon">
+              <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001">
+                <path d="M312.124 82.877h-224.5c-9.18 0-16.623 7.443-16.623 16.623 0 9.18 7.443 16.623 16.623 16.623h224.501c9.18 0 16.623-7.443 16.623-16.623-.001-9.18-7.443-16.623-16.624-16.623zM312.124 138.524h-224.5c-9.18 0-16.623 7.443-16.623 16.623s7.443 16.623 16.623 16.623h224.501c9.18 0 16.623-7.443 16.623-16.623s-7.443-16.623-16.624-16.623zM264.129 312.755c-.869-6.895-6.438-12.464-13.333-13.333-10.12-1.274-18.631 7.235-17.355 17.355.869 6.895 6.438 12.464 13.333 13.333 10.119 1.276 18.63-7.235 17.355-17.355zM327.469 312.755c-.869-6.895-6.438-12.464-13.333-13.333-10.12-1.274-18.631 7.235-17.355 17.355.869 6.895 6.437 12.464 13.333 13.333 10.12 1.276 18.631-7.235 17.355-17.355zM390.812 312.755c-.869-6.895-6.438-12.464-13.333-13.333-10.12-1.274-18.631 7.235-17.355 17.355.869 6.895 6.438 12.464 13.333 13.333 10.119 1.276 18.63-7.235 17.355-17.355z"/><path d="M443.656 176.57h-43.907V84.06c0-37.686-30.659-68.345-68.344-68.345H68.344C30.659 15.715 0 46.374 0 84.061v142.175c0 32.316 23.07 60.097 53.946 66.792l12.623 20.84c9.656 15.942 28.249 22.993 45.682 18.374v54.849c0 37.685 30.659 68.343 68.344 68.343H355.87l12.782 21.103c15.969 26.362 54.174 26.304 70.109 0l13.078-21.59c33.844-4.054 60.163-32.939 60.163-67.856V244.913c-.002-37.684-30.661-68.343-68.346-68.343zM87.624 194.174c-9.18 0-16.623 7.443-16.623 16.623 0 9.18 7.443 16.623 16.623 16.623h26.906a68.187 68.187 0 00-2.28 17.495v45.111l-4.009 6.619c-3.018 4.981-10.208 4.996-13.235-.001l-16.649-27.485a16.624 16.624 0 00-12.876-7.957c-18.076-1.463-32.234-16.822-32.234-34.966V84.061c0-19.355 15.745-35.1 35.099-35.1h263.06c19.353 0 35.099 15.745 35.099 35.1v92.51h-185.91c-17.57 0-33.609 6.669-45.731 17.604h-47.24zm354.552 228.013a16.624 16.624 0 00-14.218 8.011l-17.635 29.113c-3.023 4.99-10.214 4.988-13.235 0l-17.635-29.113a16.628 16.628 0 00-14.218-8.011h-184.64c-19.353 0-35.099-15.745-35.099-35.098V244.913c0-19.353 15.745-35.099 35.099-35.099h263.06c19.353 0 35.099 15.745 35.099 35.099V387.09c0 18.16-14.046 35.097-36.578 35.097z"/>
+              </svg>
+            </span>
+            <span>Live Chat</span>
+            <span class="submenu__chat__button">Online</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- // SubMenu//  -->
+
+  </header>
+  <!-- // Header // -->
+<main class="page__main main">
+  <div class="main__metabar page__metabar metabar">
+    <button class="button menu__button menu__button-open">
+      <span class="header__icon">
+        <svg class="header__svg">
+          <use xlink:href="#menu-collapse"></use>
+        </svg>
+      </span>
+    </button>
+    <p class="metabar__title">Capital Region Provider ABC</p>
+
+    <button class="button account__button">
+     <!-- <span class="account__title">Welcome</span>
+      <span class="account__title account__title-bold">Regina</span> -->
+      <span class="account__icon">
+        <svg class="account__icon-svg">
+          <use xlink:href="#welcome"></use>
+        </svg>
+      </span>
+    </button>
+
+
+    <button class="button bell__button">
+     <span class="metabar__icon">
+        <svg class="header__svg">
+          <use xlink:href="#notifications"></use>
+        </svg>
+      </span>
+    </button>
+
+    <button class="sign__button">
+     <span class="metabar__icon">
+        <svg class="metabar__icon-svg">
+          <use xlink:href="#sign-out"></use>
+        </svg>
+      </span>
+     <!-- <span class="sign__title">Sign Out</span>-->
+    </button>
+  </div>
+
+  <section class="page__info info">
+    <h2 class="page__title">HEDIS Gaps</h2>
+    <p class="page__description"> Identify HEDIS Gaps so that you can encourage patiennts to schedule the appropriate appointment(s) or submit a closure.</p>
+  </section>
+
+  <div class="page__content">
+    <section class="page__section">
+    <h2 class="page__title page__section__title">Search Reconcilable Gaps</h2>
+    <from action="" method="get" class="page__form form">
+      <div class="page__row">
+        <label class="page__col-two form__field">
+          <span class="form__field__title">HEDIS Gap</span>
+          <input class="form__field__input" type="text" placeholder="Gap Name or ID"/>
+        </label>
+        <label class="page__col-two form__field">
+          <span class="form__field__title">Provider</span>
+          <input class="form__field__input" type="text" placeholder="Provider or National Provider ID (NPI)"/>
+        </label>
+      </div>
+      <div class="page__row">
+        <label class="page__col-three form__field">
+          <span class="form__field__title">Members</span>
+          <input class="form__field__input" type="text" placeholder="Member or member ID"/>
+        </label>
+        <label class="page__col-three form__field">
+          <span class="form__field__title">Statuses</span>
+          <input class="form__field__input" type="text" placeholder="Status"/>
+        </label>
+        <label class="page__col-three form__field">
+          <span class="form__field__title">Date</span>
+          <input class="form__field__input form__field__input-date" type="date" placeholder="Date range"/>
+        </label>
+      </div>
+      <div class="form_row">
+        <button class="button__main" type="submit">Search</button>
+      </div>
+    </from>
+  </section>
+
+    <section class="page__section">
+      <h2 class="page__title page__section__title page__section__title-underline ">Reconciliable Gaps Summary</h2>
+        <ul class="page__row">
+          <li class="page__col-three summary">
+            <span class="summary__status">Open</span>
+            <span class="summary__number">89</span>
+            <a class="summary__view__link" href="/">View All</a>
+          </li>
+          <li class="page__col-three summary">
+            <span class="summary__status">Submitted</span>
+            <span class="summary__number">35</span>
+            <a class="summary__view__link" href="/">View All</a>
+          </li>
+          <li class="page__col-three summary">
+            <span class="summary__status">Rejected</span>
+            <span class="summary__number">29</span>
+            <a class="summary__view__link" href="/">View All</a>
+          </li>
+        </ul>
+    </section>
+
+    <section class="page__section page__section-without-bg">
+      <h2 class="page__title page__title-standalone">All HEDIS Gaps</h2>
+    </section>
+
+    <section class="page__section page__section-with-border">
+      <h2 class="page__title page__title-small">John W. Smith</h2>
+      <div class="results page__row__no-gutter">
+        <ul class="results__table page__col__no-gutter">
+          <li class="results__table__item">
+            <span class="results__table__item__title">ID Number</span>
+            <span class="results__table__item__description">12678637428365-9478</span>
+          </li>
+          <li class="results__table__item">
+            <span class="results__table__item__title">Date of Birth</span>
+            <span class="results__table__item__description">12/08/1980</span>
+          </li>
+          <li class="results__table__item">
+            <span class="results__table__item__title">Sex</span>
+            <span class="results__table__item__description">Male</span>
+          </li>
+          <li class="results__table__item">
+            <span class="results__table__item__title">Provider</span>
+            <span class="results__table__item__description">Julia R. Lewis (NPI: 1234567890)</span>
+          </li>
+        </ul>
+
+        <section class="results__details">
+          <h3 class="page__title page__title-nano">Matching Reconcilable Gaps</h3>
+          <div class="results__details__info info">
+            <div class="info__header page__row__no-gutter">
+              <ul class="info__header__list page__col__no-gutter">
+                <li class="info__header__list__item">
+                  <span class="info__header__list__item__title">Measure</span>
+                  <span class="info__header__list__item__description">
+                    <span>COL</span>
+                    <a href="/" class="page__link">Functional magnetic resonance imaging</a>
+                  </span>
+                </li>
+                <li class="info__header__list__item">
+                  <span class="info__header__list__item__title">Submitted</span>
+                  <span class="info__header__list__item__description">12/12/2019</span>
+                </li>
+                <li class="info__header__list__item">
+                  <span class="info__header__list__item__title">Modified</span>
+                  <span class="info__header__list__item__description">12/24/2019</span>
+                </li>
+              </ul>
+              <div class="info__header__status  page__col__no-gutter">
+                <span class="info__header__status__label">Rejected</span>
+              </div>
+              <div class="info__header__collapse collapse__button collapse__button-open page__col__no-gutter">
+                <svg class="header__svg">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="info__document page__row hide">
+              <div class="info__document__description page__col">
+                <h4 class="info__document__description-title">Reason for Rejection</h4>
+                <p class="info__document__description-text">
+                  Non-surgical medical procedures are used to diagnose, measure or treat problems such as disease or
+                  injury. Non-surgical medical procedures are used to diagnose, measure or treat problems such as
+                  disease or injury. Non-surgical procedures.
+                </p>
+
+                <h4 class="info__document__description-title">Criteria</h4>
+                <p class="info__document__description-text">Flexible Sigmoidoscopy during the measurement year or prior.</p>
+
+                <h4 class="info__document__description-title">Date of service</h4>
+                <p class="info__document__description-text">12/12/2019</p>
+
+                <h4 class="info__document__description-title">Documents</h4>
+                <div class="info__document__description__notification info__document__description__item">
+                  <svg class="header__svg info__document__description-icon info__document__description__notification-icon">
+                    <use xlink:href="#notify"></use>
+                  </svg>
+                  <span class="info__document__description__text-small page__color-placehorder">
+                    All submitted documents will be merged into one pdf file after saving.
+                  </span>
+                </div>
+                <div class="info__document__description__doc info__document__description__item">
+                  <svg class="header__svg info__document__description-icon info__document__description__doc-icon">
+                    <use xlink:href="#doc"></use>
+                  </svg>
+                  <span class="info__document__description__text-small page__color-blue">Documentname.pdf</span>
+                </div>
+              </div>
+
+
+              <button class="info__document__edit__button">
+                <svg class="header__svg">
+                  <use xlink:href="#edit"></use>
+                </svg>
+                <span class="info__document__edit__button__text">Edit</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div class="results__more">
+          <button class="page__link">See 12 Other Gaps</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script type="text/javascript" src="bundle.6924e23f206c2d98c92d.js"></script></body>
+</html>
