@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress --profile"
+    "build-dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress --profile",
+    "build-prod": "webpack --config webpack.prod.js"
   },
   "files": [
     "dist/"
@@ -28,7 +29,8 @@
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
     "svgo": "^1.3.2",
-    "svgo-loader": "^2.2.1"
+    "svgo-loader": "^2.2.1",
+    "webpack-merge": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
